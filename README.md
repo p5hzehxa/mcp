@@ -2,20 +2,6 @@
 
 `wappalyzer-mcp` is a local stdio MCP server that wraps the public Wappalyzer API.
 
-V1 scope:
-
-- local `stdio` transport only
-- existing API-key passthrough only
-- read-only only
-- synchronous only
-
-V1 exclusions:
-
-- no hosted or remote MCP transport
-- no Wappalyzer account auth or OAuth
-- no async recursive live crawl workflow
-- no write endpoints such as lists, alerts, or verify
-
 ## Requirements
 
 - Node.js 20+
@@ -184,9 +170,7 @@ Add this to `.cursor/mcp.json`:
 
 ### ChatGPT
 
-OpenAI currently documents remote MCP connectors rather than local `stdio` MCP configuration. Because this package is intentionally local and `stdio`-only in v1, there is no direct ChatGPT config snippet for it yet.
-
-If ChatGPT support matters, that needs a separate remote MCP phase.
+Use a remote MCP deployment when you need ChatGPT MCP connector support.
 
 ## Development
 
