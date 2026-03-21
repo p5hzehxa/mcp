@@ -1,0 +1,21 @@
+{
+  "name": "wappalyzer-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local MCP server for the Wappalyzer API",
+  "type": "commonjs",
+  "bin": {
+    "wappalyzer-mcp": "./index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/http-client.test.js test/server.test.js",
+    "test:live": "node --test test/live-smoke.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.27.1",
+    "zod": "3.25.76"
+  }
+}
